@@ -23,14 +23,16 @@
 
 <body>
 
-  <header class="cabecalho">
+  <header class="cabecalho" id="topo">
     <nav class="cabecalho__navegacao container">
       <img src="./assets/img/logo-generic-manga.svg" alt="" class="cabecalho__logo">
 
         <ul class="cabecalho__menu cabecalho__menu-hidden" data-menu>
-          <li class="cabecalho__menu___item"><a href="#" class="item__link">teste</a></li>
-          <li class="cabecalho__menu___item"><a href="#" class="item__link">teste</a></li>
-          <li class="cabecalho__menu___item"><a href="#" class="item__link">teste</a></li>
+          <li class="cabecalho__menu___item"><a href="#inicio" class="item__link" data-link-menu>início</a></li>
+          <li class="cabecalho__menu___item"><a href="#sobre" class="item__link" data-link-menu>sobre nós</a></li>
+          <li class="cabecalho__menu___item"><a href="#mangas" class="item__link" data-link-menu>mangás</a></li>
+          <li class="cabecalho__menu___item"><a href="#cards" class="item__link" data-link-menu>cards</a></li>
+          <li class="cabecalho__menu___item"><a href="#contato" class="item__link" data-link-menu>contato</a></li>
         </ul>
 
       <div class="menu__icon icon-menu show" data-icon-menu></div>
@@ -43,7 +45,7 @@
     
     <section class="banner"></section>
 
-    <section class="primeiro-conteudo container">
+    <section class="primeiro-conteudo container" id="inicio">
       <div class="primeiro-conteudo__box">
         <h1 class="primeiro-conteudo__titulo titulo">Lorem ipsum</h1>
         <h3 class="primeiro-conteudo__subtitulo titulo">Lorem ipsum</h3>
@@ -58,9 +60,9 @@
 
     <div class="linha-1"></div>
 
-    <section class="segundo-conteudo container">
+    <section class="segundo-conteudo container" id="sobre">
 
-      <h3 class="segundo-conteudo__titulo titulo">Lorem ipsum</h3>
+      <h3 class="segundo-conteudo__titulo titulo">Sobre Nós</h3>
       <p class="segundo-conteudo__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, maiores! Voluptatibus, consequuntur. Quod id hic iste numquam eligendi, ipsa debitis explicabo? Dolor ipsam eaque repellendus ducimus ex numquam earum quidem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, vel numquam praesentium facilis consequatur ratione nemo, nihil quod blanditiis minus eum provident assumenda commodi, quisquam modi magnam ipsa dolorem aliquam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, vel numquam praesentium facilis consequatur ratione nemo, nihil quod blanditiis minus eum provident assumenda commodi, quisquam modi magnam ipsa dolorem aliquam?</p>
 
       <a href="#"><button class="segundo-conteudo__botao">saiba mais</button></a>
@@ -69,9 +71,9 @@
 
     <div class="linha-2"></div>
 
-    <section class="terceiro-conteudo container">
+    <section class="terceiro-conteudo container" id="mangas">
 
-      <h2 class="terceiro-conteudo__titulo titulo">Lorem ipsum</h2>
+      <h2 class="terceiro-conteudo__titulo titulo">Mangás!</h2>
 
       <div class="terceiro-conteudo__box">
         <img class="terceiro-conteudo__imagem" src="./assets/img/img-02.jpg" alt="">
@@ -83,9 +85,9 @@
 
     <div class="linha-1"></div>
 
-    <section class="quarto-conteudo container">
+    <section class="quarto-conteudo container" id="cards">
 
-        <h2 class="quarto-conteudo__titulo titulo">Lorem ipsum</h2>
+        <h2 class="quarto-conteudo__titulo titulo">Cards</h2>
 
       <div class="cards">
         <div class="card">
@@ -111,7 +113,7 @@
 
     <div class="linha-2"></div>
 
-    <address class="endereco container">
+    <address class="endereco container" id="contato">
       <h3 class="endereco__titulo titulo">CONTATO</h3>
 
       <p class="endereco__texto">
@@ -128,7 +130,7 @@
   <footer class="footer">
 
     <section class="footer__conteudo container">
-      <img class="footer__logo" src="./assets/img/logo-generic-manga-negativo.svg" alt="">
+      <a href="#topo"><img class="footer__logo" src="./assets/img/logo-generic-manga-negativo.svg" alt=""></a>
       <div class="footer__social">
         <div class="footer__social___lista">
           <a href="#" class="footer__social___item"></a>

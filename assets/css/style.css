@@ -97,21 +97,20 @@ html {
 .cabecalho__menu___item {
   font-family: var(--font-base);
   font-size: 2rem;
-
   text-transform: lowercase;
 }
 
 .item__link {
-  text-decoration: none;
   color: var(--preto);
   position: relative;
+  text-decoration: none;
 }
 
 .item__link::after {
   background: var(--vermelho);
   bottom: 0.1rem;
   content: '';
-  height: 2px;
+  height: 3px;
   left: 0;
   position: absolute;
   transition: width 0.2s;
@@ -363,8 +362,7 @@ html {
   content: '\ea96';
 }
 
-/*media querry*/
-/*  */
+/* media query */
 
 @media screen and (min-width: 1024px) {
   .titulo {
@@ -381,7 +379,7 @@ html {
   }
 
   .cabecalho__navegacao {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .cabecalho__menu {
