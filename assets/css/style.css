@@ -108,7 +108,7 @@ html {
 
 .item__link::after {
   background: var(--vermelho);
-  bottom: 0.1rem;
+  bottom: -0.1rem;
   content: '';
   height: 3px;
   left: 0;
@@ -182,7 +182,7 @@ html {
 
 .primeiro-conteudo__imagem {
   max-height: 500px;
-  max-width: 700px;
+  max-width: 600px;
   min-height: auto;
   width: 100%;
 }
@@ -235,8 +235,8 @@ html {
 
 .terceiro-conteudo__imagem {
   margin-bottom: 2rem;
-  max-width: 700px;
   max-height: 500px;
+  max-width: 600px;
   min-height: auto;
   width: 100%;
 }
@@ -259,9 +259,8 @@ html {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
   gap: 1rem;
+  justify-content: center;
 }
 
 .card {
@@ -270,18 +269,19 @@ html {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   max-width: 400px;
+  padding: 2rem;
   text-align: center;
 }
 
 .card__titulo {
-  color: var(--vermelho);
   padding: 0.5rem;
+  padding-bottom: 1rem ;
 }
 
 .card__imagem {
-  border-radius: 100%;
+  width: 100px;
+  height: 100px;
 }
 
 .card__texto {
@@ -294,11 +294,11 @@ html {
 /* ENDERECO */
 
 .endereco {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 4rem 0.5rem;
   justify-content: space-around;
-  align-items: center;
+  padding: 4rem 0.5rem;
 }
 
 .endereco__titulo {
@@ -322,8 +322,8 @@ html {
 /* FOOTER*/
 
 .footer {
-  padding: 1.25rem;
   background: var(--preto);
+  padding: 1.25rem;
 }
 
 .footer__conteudo {
@@ -369,9 +369,9 @@ html {
     font-size: 1.5rem;
   }
   .banner {
-    visibility: visible;
-    position: static;
     height: 400px;
+    position: static;
+    visibility: visible;
   }
 
   .cabecalho {
@@ -383,12 +383,12 @@ html {
   }
 
   .cabecalho__menu {
+    align-items: unset;
     flex-direction: row;
+    gap: 1rem;
     position: static;
     width: auto;
     height: auto;
-    align-items: unset;
-    gap: 1rem;
   }
 
   .cabecalho__menu-hidden {
@@ -398,8 +398,8 @@ html {
   }
 
   .cabecalho__menu___item {
-    font-weight: 700;
     font-size: 1rem;
+    font-weight: 700;
   }
 
   .item__link {
@@ -416,6 +416,12 @@ html {
     width: 130px;
   }
 
+  .cabecalho__icons {
+    position: absolute;
+    display: hidden;
+    visibility: hidden;
+  }
+
   .primeiro-conteudo {
     display: flex;
     flex-direction: row;
@@ -427,17 +433,18 @@ html {
     padding: 0.8rem;
   }
 
-  .primeiro-conteudo__titulo {
-    font-size: 3rem;
-    text-align: start;
-  }
-
-  .primeiro-conteudo__subtitulo {
-    text-align: start;
-  }
-
+  .primeiro-conteudo__titulo,
+  .primeiro-conteudo__subtitulo,
   .primeiro-conteudo__texto {
     text-align: start;
+  }
+
+  .primeiro-conteudo__titulo {
+    font-size: 3rem;
+  }
+
+  .segundo-conteudo__texto {
+    padding: 0 5rem;
   }
 
   .terceiro-conteudo__box {
